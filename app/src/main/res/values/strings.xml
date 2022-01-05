@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">FinDit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="chekbox">PACKAGE.chekbox</string>
+    <string name="email">PACKAGE.email</string>
+    <string name="password">PACKAGE.password</string>
+    <string name="register">register</string>
+    <string name="cancel">cancel</string>
+    <string name="department">Department</string>
+    <string name="confirmpwd">Confirm Password</string>
+    <string name="passwordd">Password</string>
+    <string name="classe">Class</string>
+    <string name="todo">TODO</string>
+    <string name="Name">Full Name</string>
+    <string name="Email">Email</string>
+    <string name="Phone">Phone</string>
+    <string-array name="clas">
+        <item>DSI2</item>
+        <item>DSI3</item>
+        <item>RSI2</item>
+        <item>RSI3</item>
+        <item>SEM2</item>
+        <item>SEM3</item>
+    </string-array>
+    <string-array name="dep">
+        <item>computer technology department</item>
+        <item>economics and management department</item>
+        <item>mechanical engineering department</item>
+        <item>electrical engineering department</item>
+        <item>process engineering department</item>
+    </string-array>
+</resources>

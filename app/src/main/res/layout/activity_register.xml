@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:ems="10"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/group_46"
+        android:contentDescription="@string/todo">
+
+    </ImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/Name_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/Name"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/Name"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+
+
+            android:autofillHints="name" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/Email_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/Email"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/Email"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+
+            android:autofillHints="emailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/Phone_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/Phone"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/Phone"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+
+            android:autofillHints="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/departement_"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_cancel"
+        android:drawablePadding="2dp"
+
+
+        android:layout_marginBottom="20dp"
+
+        app:helperTextTextColor="@color/teal_700">
+
+        <Spinner
+            android:id="@+id/departement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+
+
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button_cancel"
+
+
+        android:layout_marginBottom="20dp"
+        android:id="@+id/classe_"
+        app:helperTextTextColor="@color/teal_700"
+        >
+
+        <Spinner
+            android:id="@+id/classe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/Password_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/Password"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/passwordd"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:autofillHints="password" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <!-- <com.google.android.material.textfield.TextInputLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/confirmPassword_"
+         android:ems="10"
+         android:layout_marginBottom="20dp"
+         app:endIconMode="password_toggle"
+         android:drawablePadding="50dp"
+         android:padding="8dp"
+         app:helperTextTextColor="@color/teal_700"
+         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+         <EditText
+             android:id="@+id/confirmPassword"
+             android:layout_width="match_parent"
+             android:paddingBottom="16dp"
+             android:background="@drawable/custom_button_cancel"
+             android:layout_height="wrap_content"
+             android:hint="@string/confirmpwd"
+             android:inputType="textPassword"
+             tools:ignore="SpeakableTextPresentCheck"
+             android:autofillHints="password" />
+     </com.google.android.material.textfield.TextInputLayout>
+ -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_cancel"
+        android:clickable="true"
+        android:drawablePadding="50dp"
+        android:padding="8dp"
+        android:shadowRadius="20"
+        android:text="register"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck"
+        android:focusable="true" />
+
+
+
+</LinearLayout>

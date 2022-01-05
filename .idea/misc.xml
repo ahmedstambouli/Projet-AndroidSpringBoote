@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/custom_button_cancel.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/ic_baseline_person_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/ic_baseline_smartphone_24.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/ic_bxl_linkedin.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/ic_bxs_envelope.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable/ic_baseline_featured_play_list_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/drawable/selector.xml" value="0.2203125" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/activity_fragmet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/activity_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/buttom_bar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/fragment_demandedestage.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/fragment_offredestage.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/fragment_profil.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/ProjetIntegrationSpringBoot/app/src/main/res/layout/item_demande_stage.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

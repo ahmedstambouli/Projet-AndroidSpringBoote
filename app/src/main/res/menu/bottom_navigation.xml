@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_pers"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="profile" />
+
+    <item
+        android:id="@+id/nav_baskete"
+        android:icon="@drawable/ic_baseline_featured_play_list_24"
+        android:title="Offred de stage" />
+
+    <item
+        android:id="@+id/nav_listestage"
+        android:icon="@drawable/ic_baseline_format_list_numbered_24"
+        android:title="demande envoyer" />
+
+</menu>
