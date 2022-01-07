@@ -1,15 +1,29 @@
 package com.example.projetintegrationspringboot;
 
-import android.graphics.drawable.ColorDrawable;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-import java.util.Objects;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +40,12 @@ public class offredestageFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    RecyclerView recyclerView;
+    ArrayList<Offremodel> data;
+    private static final String URL_DATA = "http://192.168.1.4:8084/offers";
+    private ProgressDialog progressDialog;
+    private RequestQueue myvolley;
 
     public offredestageFragment() {
         // Required empty public constructor
@@ -64,7 +84,66 @@ public class offredestageFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_offredestage, container, false);
+        View view = inflater.inflate(R.layout.fragment_offredestage, container, false);
+        recyclerView = view.findViewById(R.id.recycle);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        data = new ArrayList<>();
+        myvolley = Volley.newRequestQueue(getContext());
+
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Loading Data...");
+        progressDialog.show();
+        getdata();
+
+
+
+        return view;
 
     }
+
+
+    private void getdata() {
+
+
+        JsonArrayRequest request = new JsonArrayRequest(Request.Method.GET, URL_DATA, null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        progressDialog.dismiss();
+                        try {
+                            System.out.println(response);
+                            for (int i = 0; i < response.length(); i++) {
+
+                                JSONObject compteobj = response.getJSONObject(i);
+                                String image = (String) compteobj.get("image");
+                                String description = (String) compteobj.get("description");
+                                String title = (String) compteobj.get("titre");
+
+
+                                Offremodel datamodel = new Offremodel();
+                                datamodel.setImage(image);
+                                datamodel.setDescription(description);
+                                datamodel.setTitle(title);
+                                data.add(datamodel);
+
+                            }
+
+                            recyclerView.setAdapter(new AdapterOffreStage(data, getContext()));
+
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //progressDialog.dismiss();
+                        Toast.makeText(getContext(), error.getMessage() + " error Loading offers", Toast.LENGTH_LONG).show();
+                    }
+                });
+        myvolley.add(request);
+    }
+
 }
