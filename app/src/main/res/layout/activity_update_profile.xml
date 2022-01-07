@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:padding="20dp"
-    tools:context=".register"
+    tools:context=".UpdateProfile"
     >
 
     <ImageView
@@ -184,7 +184,7 @@
      </com.google.android.material.textfield.TextInputLayout>
  -->
     <Button
-        android:id="@+id/register"
+        android:id="@+id/update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -193,7 +193,7 @@
         android:drawablePadding="50dp"
         android:padding="8dp"
         android:shadowRadius="20"
-        android:text="register"
+        android:text="update"
         android:textColor="@color/white"
         tools:ignore="TextContrastCheck"
         android:focusable="true" />
