@@ -43,7 +43,7 @@ public class offredestageFragment extends Fragment {
 
     RecyclerView recyclerView;
     ArrayList<Offremodel> data;
-    private static final String URL_DATA = "http://192.168.1.4:8084/offers";
+    private static final String URL_DATA = "http://192.168.1.191:8084/offers";
     private ProgressDialog progressDialog;
     private RequestQueue myvolley;
 
