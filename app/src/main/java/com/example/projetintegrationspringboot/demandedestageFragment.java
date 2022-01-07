@@ -42,7 +42,7 @@ public class demandedestageFragment extends Fragment {
     private String mParam2;
     RecyclerView recyclerView;
     ArrayList<Demandemodel> dataholder;
-    private static final String URL_DATA = "http://192.168.1.4:8084/offers";
+    private static final String URL_DATA = "http://192.168.1.191:8084/offers";
     private ProgressDialog progressDialog;
     private RequestQueue myvolley;
 
