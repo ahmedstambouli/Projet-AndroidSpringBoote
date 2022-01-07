@@ -17,6 +17,11 @@
     <string name="Name">Full Name</string>
     <string name="Email">Email</string>
     <string name="Phone">Phone</string>
+    <string name="cursusuniversitaire">Cursus Universitaire</string>
+    <string name="description">Description</string>
+    <string name="skills">Skills</string>
+    <string name="stage">Stage</string>
+    <string name="image">Image</string>
     <string-array name="clas">
         <item>DSI2</item>
         <item>DSI3</item>

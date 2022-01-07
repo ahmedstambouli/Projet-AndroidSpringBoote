@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".AddcvActivity"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="167dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/todo"
+        android:ems="10"
+        android:src="@drawable/img2">
+
+    </ImageView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/image_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/image"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/image"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Image" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/cursusuniversitaire_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/cursusuniversitaire"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/cursusuniversitaire"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+
+
+            android:autofillHints="Cursus Universitaire" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/description_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/description"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/description"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+
+            android:autofillHints="Description" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/skills_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/skills"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/skills"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="skills" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/stage_"
+        app:endIconMode="clear_text"
+        android:drawablePadding="50dp"
+        app:helperTextTextColor="@color/teal_700"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <EditText
+            android:id="@+id/stage"
+            android:background="@drawable/custom_button_cancel"
+            android:hint="@string/stage"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="skills" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_cancel"
+        android:clickable="true"
+        android:drawablePadding="50dp"
+        android:padding="8dp"
+        android:shadowRadius="20"
+        android:text="ADD CV"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck"
+        android:focusable="true" />
+
+
+
+</LinearLayout>

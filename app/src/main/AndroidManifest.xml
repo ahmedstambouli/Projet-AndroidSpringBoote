@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProjetIntegrationSpringBoot">
         <activity
+            android:name=".AddcvActivity"
+            android:exported="false" />
+        <activity
             android:name=".start"
             android:exported="true" />
         <activity
