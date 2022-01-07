@@ -65,12 +65,21 @@ public class ProfilFragment extends Fragment  {
                              Bundle savedInstanceState) {
         View view =inflater.inflate(R.layout.fragment_profil, container, false);
         Button addCV = view.findViewById(R.id.addCV);
-        Intent intent=new Intent(getActivity().getApplicationContext(),AddcvActivity.class);
+
+        Intent intent=new Intent(getContext(),AddcvActivity.class);
         addCV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(intent);
 
+            }
+        });
+        Button UpdateProfile = view.findViewById(R.id.updateProfile);
+        Intent intent1=new Intent(getContext(),UpdateProfile.class);
+        UpdateProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(intent1);
             }
         });
         // Inflate the layout for this fragment
