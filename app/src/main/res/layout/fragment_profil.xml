@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="mouhamed ali kbaier"
+                    android:text="Youssef Farhat"
                     android:textColor="@color/black"
                     android:textStyle="bold">
 
@@ -90,7 +90,7 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/ic_baseline_email_24">
+                    android:src="@drawable/ic_baseline_alternate_email_24">
 
                 </ImageView>
 
@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="dali20@gmail.com"
+                    android:text="youssef@gmail.com"
                     android:textColor="@color/black"
                     android:textStyle="bold">
 
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="+216 52800400"
+                    android:text="+216 55387849"
                     android:textColor="@color/black"
                     android:textStyle="bold">
 
@@ -140,7 +140,7 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/ic_baseline_email_24">
+                    android:src="@drawable/ic_baseline_business_24">
 
                 </ImageView>
 
@@ -149,7 +149,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="technologie de l'information"
+                    android:text="departement informatique"
                     android:textColor="@color/black"
                     android:textStyle="bold">
 
@@ -165,7 +165,7 @@
                 <ImageView
                     android:layout_width="36dp"
                     android:layout_height="36dp"
-                    android:src="@drawable/ic_baseline_email_24">
+                    android:src="@drawable/ic_baseline_supervised_user_circle_24">
 
                 </ImageView>
 
@@ -174,12 +174,14 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="20dp"
-                    android:text="developpement systeme d'information"
+                    android:text="DSI33"
                     android:textColor="@color/black"
                     android:textStyle="bold">
 
                 </TextView>
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
